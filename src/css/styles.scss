@@ -165,10 +165,18 @@
     margin-top: 80px;
     &__col {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: auto;
 
       &__item {
         text-decoration: none;
         width: 270px;
+        margin-left: 17.5px;
+        margin-right: 17.5px;
+        &:hover {
+          color: $bruin;
+        }
         .icon-pencil {
           height: 48px;
           width: 48px;
@@ -176,6 +184,9 @@
           justify-content: center;
           margin: auto;
           color: $donkerbruin;
+          &:hover {
+            color: $bruin;
+          }
         }
         .icon-stack {
           height: 48px;
@@ -184,6 +195,9 @@
           justify-content: center;
           margin: auto;
           color: $donkerbruin;
+          &:hover {
+            color: $bruin;
+          }
         }
         .icon-gear {
           height: 48px;
@@ -192,6 +206,9 @@
           justify-content: center;
           margin: auto;
           color: $donkerbruin;
+          &:hover {
+            color: $bruin;
+          }
         }
         .icon-suitcase {
           height: 48px;
@@ -200,6 +217,9 @@
           justify-content: center;
           margin: auto;
           color: $donkerbruin;
+          &:hover {
+            color: $bruin;
+          }
         }
         &__title {
           font-family: Raleway;
@@ -208,9 +228,31 @@
           color: $donkerbruin;
           text-decoration: none;
           text-align: center;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          &:hover {
+            color: $bruin;
+          }
         }
         &__text {
-          color: $donkerbruin;
+          font-family: Montserrat;
+          font-size: 14px;
+          color: $bruin;
+          text-align: center;
+          line-height: 25px;
+          margin-bottom: 30px;
+        }
+        &__bar {
+          width: 70px;
+          height: 4px;
+          background-color: $bruin;
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          margin-bottom: 120px;
+          &:hover {
+            color: $donkerbruin;
+          }
         }
       }
     }

@@ -258,3 +258,11 @@
     }
   }
 }
+
+@media screen and (max-width: 620px) {
+  .raleway {
+    &__top {
+      padding: 0px;
+    }
+  }
+}

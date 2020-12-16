@@ -4,3 +4,215 @@
 @use './base/mixins' as *;
 
 @import "../../icons/style.css";
+
+.raleway {
+  &__top {
+    background-image: url(../../images/background.jpg);
+    background-size: cover;
+    height: 1024px;
+    padding-top: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 40px;
+    &__head {
+      margin: auto;
+      width: 1180px;
+      margin-bottom: 285px;
+
+      display: flex;
+      align-items: center;
+      &__logo {
+        display: flex;
+        align-items: center;
+        &__text {
+          color: $wit;
+          font-family: Raleway;
+          font-weight: 400;
+          font-size: 34px;
+          margin-left: 25px;
+          margin-right: 185px;
+        }
+        .icon-logo {
+          height: 57px;
+          width: 65px;
+          color: $wit;
+        }
+      }
+      &__items {
+        display: flex;
+        &__item {
+          text-decoration: none;
+          color: $wit;
+          font-family: Montserrat;
+          font-size: 14px;
+          margin-right: 45px;
+          &:hover {
+            color: $bruin;
+          }
+          &:nth-child(7) {
+            margin-right: 110px;
+          }
+        }
+      }
+      &__icon {
+        color: $wit;
+        font-size: 25px;
+        &:hover {
+          color: $bruin;
+        }
+      }
+    }
+    &__middle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__iconleft {
+        margin-bottom: 320px;
+        .icon-left {
+          color: $wit;
+          height: 75px;
+          width: 40px;
+          opacity: 0.6;
+          &:hover {
+            color: $bruin;
+          }
+        }
+      }
+      &__right {
+        margin-bottom: 320px;
+        .icon-right {
+          color: $wit;
+          height: 75px;
+          width: 40px;
+          opacity: 0.6;
+          &:hover {
+            color: $bruin;
+          }
+        }
+      }
+      &__item {
+        width: 570px;
+        &__slogan {
+          color: $wit;
+          font-family: Raleway;
+          font-weight: 500;
+          font-size: 36px;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        &__tagline {
+          color: $wit;
+          font-family: Raleway;
+          font-weight: 800;
+          font-size: 52px;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        &__text {
+          color: $wit;
+          font-family: Montserrat;
+          font-size: 16px;
+          text-align: center;
+          line-height: 22px;
+          margin-bottom: 52px;
+        }
+        &__button {
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          margin-bottom: 330px;
+          &__button {
+            border: none;
+            background-color: $bruin;
+            border-radius: 3px;
+            color: white;
+            padding: 20px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            &:hover {
+              background-color: $donkerbruin;
+            }
+          }
+        }
+        &__navpoints {
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          &__navpoint {
+            display: flex;
+          }
+          &__balls {
+            background-color: $wit;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+            &:hover {
+              background-color: $donkerbruin;
+              border: 1px solid$wit;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    margin-top: 80px;
+    &__col {
+      display: flex;
+
+      &__item {
+        text-decoration: none;
+        width: 270px;
+        .icon-pencil {
+          height: 48px;
+          width: 48px;
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          color: $donkerbruin;
+        }
+        .icon-stack {
+          height: 48px;
+          width: 48px;
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          color: $donkerbruin;
+        }
+        .icon-gear {
+          height: 48px;
+          width: 48px;
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          color: $donkerbruin;
+        }
+        .icon-suitcase {
+          height: 48px;
+          width: 48px;
+          display: flex;
+          justify-content: center;
+          margin: auto;
+          color: $donkerbruin;
+        }
+        &__title {
+          font-family: Raleway;
+          font-weight: 600;
+          font-size: 22px;
+          color: $donkerbruin;
+          text-decoration: none;
+          text-align: center;
+        }
+        &__text {
+          color: $donkerbruin;
+        }
+      }
+    }
+  }
+}
